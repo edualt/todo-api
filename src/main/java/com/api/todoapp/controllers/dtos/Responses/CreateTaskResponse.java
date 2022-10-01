@@ -1,6 +1,6 @@
-package com.api.todoapp.Controllers.dtos.Responses;
+package com.api.todoapp.controllers.dtos.Responses;
 
-import com.api.todoapp.Persistence.Entities.TaskStatus;
+import com.api.todoapp.constants.TaskStatusEnum;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -13,6 +13,6 @@ public class CreateTaskResponse {
     private LocalDateTime createdDate;
     private LocalDateTime eta;
     private Boolean finished;
-    private TaskStatus taskStatus;
+    private TaskStatusEnum taskStatusEnum;
 
 }

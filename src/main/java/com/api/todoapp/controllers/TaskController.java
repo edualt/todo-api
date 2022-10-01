@@ -1,8 +1,8 @@
-package com.api.todoapp.Controllers;
+package com.api.todoapp.controllers;
 
-import com.api.todoapp.Controllers.dtos.Requests.CreateTaskRequest;
-import com.api.todoapp.Controllers.dtos.Responses.CreateTaskResponse;
-import com.api.todoapp.Services.ITaskService;
+import com.api.todoapp.controllers.dtos.Requests.CreateTaskRequest;
+import com.api.todoapp.controllers.dtos.Responses.CreateTaskResponse;
+import com.api.todoapp.services.ITaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

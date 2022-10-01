@@ -1,5 +1,6 @@
-package com.api.todoapp.Persistence.Entities;
+package com.api.todoapp.persistence.entities;
 
+import com.api.todoapp.constants.TaskStatusEnum;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -7,7 +8,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "TASKS")
+@Table(name = "tasks")
 public class Task {
 
     @Id
@@ -18,5 +19,5 @@ public class Task {
     private LocalDateTime createdDate;
     private LocalDateTime eta;
     private boolean finished;
-    private TaskStatus taskStatus;
+    private TaskStatusEnum taskStatus;
 }
